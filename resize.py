@@ -8,6 +8,9 @@ SCREEN_SIZE = (SCREEN_WIDTH, SCREEN_HEIGHT)
 
 background_image = 'gear2.png'
 
+#replace gear2.png with any background immage, I suggest something roughly the same size as the width/height 's begining dimensions)
+
+
 pygame.init()
 Main_Screen = pygame.display.set_mode(SCREEN_SIZE, pygame.RESIZABLE, 32)
 
