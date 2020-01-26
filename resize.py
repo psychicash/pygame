@@ -1,3 +1,14 @@
+'''
+NOTE: The original code to this comes from exercises in the Beginning Python Games Development with Pygame Second Edition by
+Harrison Kinsley and Will McGugan.  I have had to make some adjustments from their code as pygame has had some major updates.
+
+Also... soon the code will reorganized and isolated into it's own function to be used with any and all assets within whatever
+project you are currently working on.
+
+
+
+'''
+
 import pygame
 
 from sys import exit
@@ -24,7 +35,7 @@ while True:
         exit()
     elif event.type == pygame.VIDEORESIZE:
         #on videoreize event, this gets run
-        #the background has to be reinitialized or it will get distorted with every resize.
+        #the background has to be reinitialized or it will get distorted with every resize
         background = pygame.image.load(background_image).convert()
         SCREEN_SIZE = event.size
         Main_Screen = pygame.display.set_mode(SCREEN_SIZE, pygame.RESIZABLE, 32)
