@@ -23,6 +23,8 @@ while True:
         pygame.quit()
         exit()
     elif event.type == pygame.VIDEORESIZE:
+        #on videoreize event, this gets run
+        #the background has to be reinitialized or it will get distorted with every resize.
         background = pygame.image.load(background_image).convert()
         SCREEN_SIZE = event.size
         Main_Screen = pygame.display.set_mode(SCREEN_SIZE, pygame.RESIZABLE, 32)
